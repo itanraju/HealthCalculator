@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_screen" />
+
+            <ImageView
+                android:id="@+id/option"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/option" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/idealWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ideal_weight_selector" />
+
+                <ImageView
+                    android:id="@+id/bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bmi_selector" />
+
+                <ImageView
+                    android:id="@+id/bodyFat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/body_fat_selector" />
+
+                <ImageView
+                    android:id="@+id/caloriesForWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/calories_for_weight_selector" />
+
+                <ImageView
+                    android:id="@+id/waterIntake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/water_intake_selector" />
+
+                <ImageView
+                    android:id="@+id/targetHeartRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/target_heart_rate_selector" />
+
+                <ImageView
+                    android:id="@+id/pregnancyDueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pregnancy_due_date_selector" />
+
+                <ImageView
+                    android:id="@+id/ovulationPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ovulation_period_selector" />
+
+                <ImageView
+                    android:id="@+id/bloodVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/blood_volume_selector" />
+
+                <ImageView
+                    android:id="@+id/bloodDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/blood_donetion_selector" />
+
+                <ImageView
+                    android:id="@+id/bloodAlcohol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/blood_alcohol_selector" />
+
+                <ImageView
+                    android:id="@+id/breathCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/breath_count_selector" />
+
+                <ImageView
+                    android:id="@+id/bloodPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/blood_pressure_selector" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lowgrey"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/health"
+            android:layout_marginTop=".05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:src="@drawable/health_cal_p" />
+
+        <ImageView
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:id="@+id/profile"
+            android:src="@drawable/profile_u" />
+
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/banner_ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

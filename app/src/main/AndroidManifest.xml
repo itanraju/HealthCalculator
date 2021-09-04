@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthcalculator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthCalculator">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/AppId" />
+
+        <activity android:name=".activity.DailyCaloriesResultActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.FoodCaloriesListActivity" />
+        <activity android:name=".activity.DailyCalorieChartActivity" />
+        <activity android:name=".activity.DailyCaloriesActivity" />
+        <activity android:name=".activity.BloodPressureResultActivity" />
+        <activity android:name=".activity.BloodPressureActivity" />
+        <activity android:name=".activity.BreathCountResultActivity" />
+        <activity android:name=".activity.BreathCountActivity" />
+        <activity android:name=".activity.BloodAlcoholResultActivity" />
+        <activity android:name=".activity.BloodAlcoholChartActivity" />
+        <activity android:name=".activity.BloodAlcoholActivity" />
+        <activity android:name=".activity.BloodVolumeChartActivity" />
+        <activity android:name=".activity.CanIDonateActivity" />
+        <activity android:name=".activity.BloodDoneteResultActivity" />
+        <activity android:name=".activity.BloodDonationActivity" />
+        <activity android:name=".activity.BloodVolumeResultActivity" />
+        <activity android:name=".activity.BloodVolumeActivity" />
+        <activity android:name=".activity.OvulationPeriodChartActivity" />
+        <activity android:name=".activity.OvulationPeriodResultActivity" />
+        <activity android:name=".activity.OvulationPeriodActivity" />
+        <activity android:name=".activity.PregnancyDueDateChartActivity" />
+        <activity android:name=".activity.PregnancyDuaDateResultActivity" />
+        <activity android:name=".activity.PregnancyDueDateActivity" />
+        <activity android:name=".activity.TargetHeartRateChartActivity" />
+        <activity android:name=".activity.TargetHeartRateResultActivity" />
+        <activity android:name=".activity.TargetHeartRateActivity" />
+        <activity android:name=".activity.WaterIntakeChartActivity" />
+        <activity android:name=".activity.WaterIntakeResultActivity" />
+        <activity android:name=".activity.WaterIntakeActivity" />
+        <activity android:name=".activity.BodyFatChartActivity" />
+        <activity android:name=".activity.BodyFatResultActivity" />
+        <activity android:name=".activity.BodyFatActivity" />
+        <activity android:name=".activity.UnderstandBodyIndexActivity" />
+        <activity android:name=".activity.BodyMassIndexChartActivity" />
+        <activity android:name=".activity.BodyMassIndexResultActivity" />
+        <activity android:name=".activity.BodyMassIndexActivity" />
+        <activity android:name=".activity.IdealWeightResultActivity" />
+        <activity android:name=".activity.IdealWeightChartActivity" />
+        <activity android:name=".activity.IdealWeightActivity" />
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

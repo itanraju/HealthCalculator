@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/water_intake_p" android:state_pressed="true" />
+    <item android:drawable="@drawable/water_intake_u" android:state_pressed="false" />
+</selector>

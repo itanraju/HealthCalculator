@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DailyCaloriesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/back_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="Daily Calories"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:text="Select Gender"
+                            android:textColor="@color/toolbar"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_bg"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/male"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/male_p" />
+
+                            <ImageView
+                                android:id="@+id/female"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="1dp"
+                                android:layout_weight="2"
+                                android:adjustViewBounds="true"
+                                android:paddingRight="15dp"
+                                android:src="@drawable/female_u" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:text="Select Age"
+                            android:textColor="@color/toolbar"
+                            android:textSize="18sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/ageRecycleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="Height"
+                                android:textColor="@color/toolbar"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/cms"
+                                    android:layout_width="30dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="2"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/cms_p" />
+
+                                <ImageView
+                                    android:id="@+id/inches"
+                                    android:layout_width="30dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/inches_u" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/height_border_layout">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/heightRecycleView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="15dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:text="Weight"
+                            android:textColor="@color/toolbar"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/kg"
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="2"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/kg_p" />
+
+                            <ImageView
+                                android:id="@+id/pound"
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="2"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/pound_u" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <SeekBar
+                            android:id="@+id/weightSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="2"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/custom_thumb" />
+
+                        <TextView
+                            android:id="@+id/weightTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="15"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/gainWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/gain_weight_p" />
+
+                        <ImageView
+                            android:id="@+id/lossWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/loss_weight_u" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:text="Target Weight"
+                            android:textColor="@color/toolbar"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/targetWeightKg"
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="2"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/kg_p" />
+
+                            <ImageView
+                                android:id="@+id/targetWeightPound"
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="2"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/pound_u" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <SeekBar
+                            android:id="@+id/targetWeightSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="2"
+                            android:max="150"
+                            android:progress="20"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/custom_thumb" />
+
+                        <TextView
+                            android:id="@+id/targetWeightTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="15"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:text="Workout Period (week)"
+                            android:textColor="@color/toolbar"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <SeekBar
+                            android:id="@+id/workoutSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="2"
+                            android:max="12"
+                            android:progress="1"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/custom_thumb" />
+
+                        <TextView
+                            android:id="@+id/workoutTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="15"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/little"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="4"
+                            android:src="@drawable/little_p" />
+
+                        <ImageView
+                            android:id="@+id/moderate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="4"
+                            android:src="@drawable/moderate_u" />
+
+                        <ImageView
+                            android:id="@+id/hard"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="4"
+                            android:src="@drawable/hard_u" />
+
+                        <ImageView
+                            android:id="@+id/veryHard"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="4"
+                            android:src="@drawable/very_hard_u" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/calculate"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/calculate_selector" />
+
+                        <ImageView
+                            android:id="@+id/reset"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/reset_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/chart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:src="@drawable/daily_calorie_chart_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/foodCalorieList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:src="@drawable/food_calorie_list_selector" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/banner_ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" />
+    </FrameLayout>
+
+</RelativeLayout>

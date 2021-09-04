@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="AppId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="Banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="InterstitialAd_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="NativeAdvanceAd_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="app_open_ads">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="admob_Native">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="app_name">HealthCalculator</string>
+    <string name="ideal_weight_chart_text">The three most popular formulas for calculating \n ideal weight are the Devine,Robinson and miller formulas.</string>
+</resources>

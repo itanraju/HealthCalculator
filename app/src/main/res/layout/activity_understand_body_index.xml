@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UnderstandBodyIndexActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="Understand Body Mass Index Result"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Under Weight"
+            android:textColor="@color/toolbar"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:text="Being underweight could be a sign you're not eating enough or you may be ill. if you're underweight, a doctor can help."
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthy weight"
+            android:textColor="@color/toolbar"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:text="Keep up to good work! For tips on maintaining a health weight, check out the food and diet and fitness sections."
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Over weight"
+            android:textColor="@color/toolbar"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:text="The best way to loss weight if you're overweight is through a combination of diet and exercise. The BMI calculator will give you a personal calories allowance to help you achieve a healthy weight safety."
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obese"
+            android:textColor="@color/toolbar"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:text="The best way to loss weight if you'are obese is through a combination of diet and exercise,and in some cases,medicines. See a doctor for help and advise."
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
